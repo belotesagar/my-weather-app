@@ -1,0 +1,19 @@
+input.ng-invalid {
+  border: 1px solid red;
+}
+
+input.ng-valid {
+  border: 1px solid green;
+}
+
+/* .red-error {
+  color: red;
+} */
+
+#loginbackground {
+  background-color: #C5CAE9;
+}
+
+/* .emailHelp { 
+  color: red;
+} */

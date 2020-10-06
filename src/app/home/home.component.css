@@ -1,0 +1,63 @@
+/* .example-form-field {
+  width: 200px;
+} */
+
+#block1 {
+  background-color: #C5CAE9;
+  background-size: 400px 300px;
+  overflow: hidden;
+}
+
+#hide1,
+#hide2,
+#hide3,
+#hide4,
+#hide5,
+#hide6,
+#hide7,
+#hide8,
+#hide9 {
+  display: block;
+  color: #848dc4;
+}
+
+
+#hide1:hover {
+  font-size: 35px;
+}
+
+#hide2:hover {
+  font-size: 35px;
+}
+
+#hide3:hover {
+  font-size: 35px;
+}
+
+#hide4:hover {
+  font-size: 35px;
+}
+
+#hide5:hover {
+  font-size: 35px;
+}
+
+#hide6:hover {
+  font-size: 35px;
+}
+
+#hide7:hover {
+  font-size: 35px;
+}
+
+#hide8:hover {
+  font-size: 35px;
+}
+
+#hide9:hover {
+  font-size: 35px;
+}
+
+#block1:focus+h3#hide1 {
+  display: none;
+}

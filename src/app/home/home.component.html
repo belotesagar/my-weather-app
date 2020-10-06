@@ -1,0 +1,191 @@
+<div class="container fluid">
+  <div class="row p-2 mt-5">
+    <div class="col-sm p-2 m-2" id="block1" style="height: 200px;" (click)="showDiv('div1')">
+      <h3 id="hide1">Click Here to watch Weather of your City..</h3>
+      <div class="row" *ngIf="div1">
+        <div class="col-sm-8">
+          <mat-form-field class="example-form-field">
+            <mat-label>Enter City</mat-label>
+            <input matInput type="text" [value]="value1" [(ngModel)]="value1">
+            <button mat-button *ngIf="value1" matSuffix mat-icon-button aria-label="Clear" (click)="value1=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-4 mx-auto mt-3">
+          <button mat-flat-button color="primary" (click)="boxClicked(value1,'value1','description1')">Show</button>
+        </div>
+      </div>
+      <h4 id="value1"></h4>
+      <small class="value1"></small>
+      <small class="description1"></small>
+    </div>
+    <div class="col-sm p-2 m-2" style="height: 200px; background-color: #C5CAE9;" (click)="showDiv('div2')">
+      <h3 id="hide2">Click Here to watch Weather of your City..</h3>
+      <div class="row" *ngIf="div2">
+        <div class="col-sm-8">
+          <mat-form-field class="example-form-field">
+            <mat-label>Enter City</mat-label>
+            <input matInput type="text" [value]="value2" [(ngModel)]="value2">
+            <button mat-button *ngIf="value2" matSuffix mat-icon-button aria-label="Clear" (click)="value2=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-4 mx-auto mt-3">
+          <button mat-flat-button color="primary" (click)="boxClicked(value2,'value2','description2')">Show</button>
+        </div>
+      </div>
+      <h4 id="value2"></h4>
+      <small class="value2"></small>
+      <small class="description2"></small>
+
+    </div>
+    <div class="col-sm p-2 m-2" style="height: 200px; background-color:#C5CAE9;" (click)="showDiv('div3')">
+      <h3 id="hide3">Click Here to watch Weather of your City..</h3>
+      <div class="row" *ngIf="div3">
+        <div class="col-sm-8">
+          <mat-form-field class="example-form-field">
+            <mat-label>Enter City</mat-label>
+            <input matInput type="text" [value]="value3" [(ngModel)]="value3">
+            <button mat-button *ngIf="value3" matSuffix mat-icon-button aria-label="Clear" (click)="value3=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-4 mx-auto mt-3">
+          <button mat-flat-button color="primary" (click)="boxClicked(value3,'value3','description3')">Show</button>
+        </div>
+      </div>
+      <h4 id="value3"></h4>
+      <small class="value3"></small>
+      <small class="description3"></small>
+    </div>
+  </div>
+
+  <div class="row p-2">
+    <div class="col-sm p-2 m-2" style="height: 200px; background-color:#C5CAE9;" (click)="showDiv('div4')">
+      <h3 id="hide4">Click Here to watch Weather of your City..</h3>
+      <div class="row" *ngIf="div4">
+        <div class="col-sm-8">
+          <mat-form-field class="example-form-field">
+            <mat-label>Enter City</mat-label>
+            <input matInput type="text" [value]="value4" [(ngModel)]="value4">
+            <button mat-button *ngIf="value4" matSuffix mat-icon-button aria-label="Clear" (click)="value4=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-4 mx-auto mt-3">
+          <button mat-flat-button color="primary" (click)="boxClicked(value4,'value4','description4')">Show</button>
+        </div>
+      </div>
+      <h4 id="value4"></h4>
+      <small class="value4"></small>
+      <small class="description4"></small>
+    </div>
+    <div class="col-sm p-2 m-2" style="height: 200px; background-color:#C5CAE9;" (click)="showDiv('div5')">
+      <h3 id="hide5">Click Here to watch Weather of your City..</h3>
+      <div class="row" *ngIf="div5">
+        <div class="col-sm-8">
+          <mat-form-field class="example-form-field">
+            <mat-label>Enter City</mat-label>
+            <input matInput type="text" [value]="value5" [(ngModel)]="value5">
+            <button mat-button *ngIf="value5" matSuffix mat-icon-button aria-label="Clear" (click)="value5=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-4 mx-auto mt-3">
+          <button mat-flat-button color="primary" (click)="boxClicked(value5,'value5','description5')">Show</button>
+        </div>
+      </div>
+      <h4 id="value5"></h4>
+      <small class="value5"></small>
+      <small class="description5"></small>
+    </div>
+    <div class="col-sm p-2 m-2" style="height: 200px; background-color:#C5CAE9;" (click)="showDiv('div6')">
+      <h3 id="hide6">Click Here to watch Weather of your City..</h3>
+      <div class="row" *ngIf="div6">
+        <div class="col-sm-8">
+          <mat-form-field class="example-form-field">
+            <mat-label>Enter City</mat-label>
+            <input matInput type="text" [value]="value6" [(ngModel)]="value6">
+            <button mat-button *ngIf="value6" matSuffix mat-icon-button aria-label="Clear" (click)="value6=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-4 mx-auto mt-3">
+          <button mat-flat-button color="primary" (click)="boxClicked(value6,'value6','description6')">Show</button>
+        </div>
+      </div>
+      <h4 id="value6"></h4>
+      <small class="value6"></small>
+      <small class="description6"></small>
+    </div>
+  </div>
+
+  <div class="row p-2">
+    <div class="col-sm p-2 m-2" style="height: 200px; background-color: #C5CAE9;" (click)="showDiv('div7')">
+      <h3 id="hide7">Click Here to watch Weather of your City..</h3>
+      <div class="row" *ngIf="div7">
+        <div class="col-sm-8">
+          <mat-form-field class="example-form-field">
+            <mat-label>Enter City</mat-label>
+            <input matInput type="text" [value]="value7" [(ngModel)]="value7">
+            <button mat-button *ngIf="value7" matSuffix mat-icon-button aria-label="Clear" (click)="value7=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-4 mx-auto mt-3">
+          <button mat-flat-button color="primary" (click)="boxClicked(value7,'value7','description7')">Show</button>
+        </div>
+      </div>
+      <h4 id="value7"></h4>
+      <small class="value7"></small>
+      <small class="description7"></small>
+    </div>
+    <div class="col-sm p-2 m-2" style="height: 200px; background-color: #C5CAE9;" (click)="showDiv('div8')">
+      <h3 id="hide8">Click Here to watch Weather of your City..</h3>
+      <div class="row" *ngIf="div8">
+        <div class="col-sm-8">
+          <mat-form-field class="example-form-field">
+            <mat-label>Enter City</mat-label>
+            <input matInput type="text" [value]="value8" [(ngModel)]="value8">
+            <button mat-button *ngIf="value5" matSuffix mat-icon-button aria-label="Clear" (click)="value8=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-4 mx-auto mt-3">
+          <button mat-flat-button color="primary" (click)="boxClicked(value8,'value8','description8')">Show</button>
+        </div>
+      </div>
+      <h4 id="value8"></h4>
+      <small class="value8"></small>
+      <small class="description8"></small>
+    </div>
+    <div class="col-sm p-2 m-2" style="height: 200px; background-color: #C5CAE9;" (click)="showDiv('div9')">
+      <h3 id="hide9">Click Here to watch Weather of your City..</h3>
+      <div class="row" *ngIf="div9">
+        <div class="col-sm-8">
+          <mat-form-field class="example-form-field">
+            <mat-label>Enter City</mat-label>
+            <input matInput type="text" [value]="value9" [(ngModel)]="value9">
+            <button mat-button *ngIf="value9" matSuffix mat-icon-button aria-label="Clear" (click)="value9=''">
+              <mat-icon>close</mat-icon>
+            </button>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-4 mx-auto mt-3">
+          <button mat-flat-button color="primary" (click)="boxClicked(value9,'value9','description9')">Show</button>
+        </div>
+      </div>
+      <h4 id="value9"></h4>
+      <small class="value9"></small>
+      <small class="description9"></small>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+footer {
+  /* position: absolute; */
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+
+a {
+  color: #424242;
+  text-decoration: none;
+}
+
+a:hover {
+  font-size: 15px;
+  color: #18FFFF
+}
+
+p:hover {
+
+  color: #18FFFF;
+}
+
+h5 {
+  color: #FF1744;
+}
+
+h5:hover {
+  color: #18FFFF;
+}
+
+.footer-copyright {
+  color: #D7CCC8;
+}

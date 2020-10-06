@@ -1,0 +1,39 @@
+<nav class="navbar navbar-dark navbar-expand-lg fixed-top" style="background-color: #3f51b5">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" routerLink="default">Weather-App</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="home">Home </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="blog">Blog</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="about">About</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <!-- <a routerLink='login'>
+        <button class="mr-1" mat-raised-button color="accent">Login</button>
+      </a>
+      <a routerLink='signup'>
+        <button mat-raised-button color="accent" a>SignUp</button>
+      </a> -->
+      <button class="mr-1" mat-raised-button (click)="openDialogLogin()">Login</button>
+      <button mat-raised-button (click)="openDialog()">SignUp</button>
+    </form>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+<!-- <input type="text" placeholder="type input" #inputValue>
+<button (click)="submitValue(inputValue)">click me</button>
+<app-default-page *ngIf="defaultExist" [myValue]="value">ngContent:{{value}}
+</app-default-page>
+<br>
+<button (click)="destroy()" class="btn btn-danger">destroy</button> -->
+
+<app-footer></app-footer>
