@@ -51,12 +51,13 @@ export class HomeComponent implements OnInit {
         this.data = data;
         var country = data.sys.country;
         var nameValue = data['name'];
-        var tempValue = data['main']['temp'];
+        var tempink = data['main']['temp'] - 273.15
+        var tempValue = tempink.toFixed(2) + "°C";
         var descriptionValue = data.weather[0].description;
         console.log("@@@@@@@@@@@descriptionValue", descriptionValue);
         main.innerHTML = country + " " + nameValue;
-        temp.innerHTML = "Temp - " + tempValue + "<br>";
-        desc.innerHTML = "Description - " + descriptionValue;
+        temp.innerHTML = "Temp : " + tempValue + "<br>";
+        desc.innerHTML = "Description : " + descriptionValue;
       })
 
       .catch(err => alert("wrong city name,please retry with correct city name"));
